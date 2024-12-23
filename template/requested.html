@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Callback UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    h5{
+        font-weight: lighter;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(2px);
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .callback-modal {
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      width: 350px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .callback-modal h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .callback-modal form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .callback-modal label {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+
+    .callback-modal input, .callback-modal select {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: #ffffff;
+    }
+
+    .callback-modal input[type="submit"] {
+      background-color: #1bb76e;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .callback-modal input[type="submit"]:hover {
+      background-color: #169f5d;
+    }
+
+    /* .container {
+      text-align: center;
+      position: relative;
+      filter: blur(0);
+      pointer-events: none;
+    }
+
+    .container h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .container p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #cccccc;
+    }
+
+    .stats {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.9rem;
+      color: #cccccc;
+    } */
+    #close_icon{
+        color: white;
+        font-size: 30px;
+        font-weight: lighter;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 2%;
+        left: 90%;
+    }
+    #close_icon:hover{
+        cursor: pointer;
+        transform: rotate(765deg) scale(1.5);
+    }
+
+    .stats span {
+      display: inline-block;
+      margin-right: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay" id="requestContainer">
+    <div class="callback-modal">
+      <span id="close_icon" onclick="toCloseContainer()">+</span>
+      <center>
+        <h2>Request a callback</h2>
+        <h5>Fill the form below to request a callback from <br><center>our team</center></h5>
+      </center>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+
+        <label for="phone">Phone</label>
+        <div style="display: flex; gap: 0.5rem;">
+          <select id="country-code" name="country-code" required>
+            <option value="+1">us +1</option>
+            <option value="+91">🇮🇳 +91</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+61">🇦🇺 +61</option>
+          </select>
+          <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+        </div>
+
+        <label for="datetime">Select Date and Time</label>
+        <input type="datetime-local" id="datetime" name="datetime" required>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <h1>We teach what really matters.</h1>
+    <p>Get ready to accelerate your career with customized courses and leave your mark in the tech industry.</p>
+    <div class="stats">
+      <span>25k+ Students taught</span>
+      <span>20+ Instructors</span>
+      <span>432K+ YouTube Subs.</span>
+    </div>
+  </div> -->
+  <script>
+    function toCloseContainer(){
+      document.getElementById("requestContainer").style.display="none";
+    }
+  </script>
+</body>
+</html>

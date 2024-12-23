@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheryians coding school</title>
+    <link rel="icon" href="{% static 'images/logo.webp' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="fixed">
+        <nav class="navbar">
+            <div id="logo_name"><img id="logo" src="{% static 'images/logo.webp' %}" alt=""> Sheryians coding school</div>
+            <ul class="nav_links">
+                <li><a href="{% url 'mywebsite:home' %}">Home</a></li>
+                <li><a href="{% url 'mywebsite:courses' %}">Courses</a></li>
+                <li><a href="{% url 'mywebsite:bootcamp' %}">Bootcamp(kodr)</a></li>
+                <li><a href="{% url 'mywebsite:requested' %}">Request Callback</a></li>
+                <button class="nav_links" id="signin_button"><a href="{% url 'mywebsite:signin' %}">Signin</a></button>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="main_heading">
+        <span>We only <span class="text_highlight">teach</span><br>what we are really<br> really<span class="good_font"> good</span> at.</span>
+    </h1>
+
+    <button class="check_course_btn"><a href="{% url 'mywebsite:courses' %}">Check Courses-Make an Impact</a></button>
+    <p>
+        <span>Get ready to <span class="content_color">accelerate your<br> career</span> with customized courses<br> and leave your mark in the tech<br> industry</span>
+    </p>
+    <br>
+        <h1 class="count">
+            <span class="count_1">25k+</span>
+            <span class="count_1">20+</span>
+            <span id="count_space" class="count_1">431k+</span>
+        </h1>
+        <h1 class="count_content">
+            <span class="count_0_" id="count_1_content">Students taught</span>
+            <span class="count_1_" id="count_1_content">Instructors</span>
+            <span class="count_2_" id="count_1_content">Youtube Subs.</span>
+        </h1>
+
+        <h1 id="help_content">We do whatever it takes to help you</h1>
+        <h1 id="concept">Understand the concepts</h1>
+
+        <iframe width="952" height="535" src="https://www.youtube.com/embed/60SRAWmMXyc" title="You Are Not Yet Ready | Placements | Open Source" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+    
+        <button class="learning"><a href="">Explore Free Learning</a></button><br><br>
+
+        <p id="offered">Courses Offered.</p>
+
+        <div class="img_div"><img class="images" src="{% static 'images/image1.webp' %}" alt=""><span id="div_">Front End Domination:<br>Create Anything with Code<button class="btn">HINDI</button><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 4999</span><del class="cross_number">₹9999</del><button class="percentage">50% off</button></span></span></div> 
+
+        <div class="img_div"><img class="images" src="{% static 'images/image2.webp' %}" alt=""><span id="div_">Back End Domination:<br>Create Efficient Back End.<button class="btn">HINDI</button><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 5999</span><del class="cross_number">₹11999</del><button class="percentage">50% off</button></span></span></div>
+       <div class="img_div"><img class="images" src="{% static 'images/image3.webp' %}" alt=""><span id="div_">Apptitude & Reasoning for<br>Campus Placements<br><button class="btn">HINGLISH</button><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 999</span><del class="cross_number">₹1500</del><button class="percentage">33% off</button></span></span></div>
+
+        <div class="img_div"><img class="images" src="{% static 'images/image4.webp' %}" alt=""><span id="div_">Java & DSA Domination<button class="btn">HINGLISH</button><br><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 4999</span><del class="cross_number">₹9999</del><button class="percentage">50% off</button></span></span></div>
+
+        <div class="view">View Details</div>
+        <div class="view">View Details</div>
+        <div class="view">View Details</div>
+        <div class="view">View Details</div>
+
+        <div class="img_div"><img class="images" src="{% static 'images/image5.webp' %}" alt=""><span id="div_">Java & DSA Domination<button class="btn">HINDI</button><br><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 2499</span><del class="cross_number">₹3500</del><button class="percentage">29% off</button></span></span></div>
+        <br>
+        <div class="views">View Details</div>
+        <br>
+        <main>
+            <section class="top_companies">
+                <h1>Top <span class="highlight">companies</span> our students <br>working with</h1>
+                <div class="companies_grid">
+                    <img src="{% static 'images/netlink.jfif' %}" alt="Netlink">
+                    <img src="{% static 'images/mindtree.png' %}" alt="Mindtree">
+                    <img src="{% static 'images/walmart.png' %}" alt="Walmart">
+                    <img src="{% static 'images/RapidOps_Logo.jpg' %}" alt="Rapidops">
+                    <img src="{% static 'images/tcs.webp' %}" alt="TCS">
+                    <img src="{% static 'images/amazon.png' %}" alt="Amazon">
+                    <img src="{% static 'images/wipro.png' %}" alt="Wipro">
+                    <img src="{% static 'images/GeeksforGeeks.png' %}" alt="GeeksforGeeks">
+                </div>
+                <center><button id="lst_btn" class="explore_btn">Explore Courses</button></center>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <div class="footer-container">
+                <!-- Social Section -->
+                <div class="social-section">
+                    <div class="icon">
+                        <img src="{% static 'images/logo.webp' %}" alt="Logo">
+                    </div>
+                    <h4>Let's connect with our socials</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="{% static 'images/insta.png' %}" alt="Instagram"></a>
+                        <a href="#"><img src="{% static 'images/linkedin.jpg' %}" alt="LinkedIn"></a>
+                        <a href="#"><img src="{% static 'images/youtube.png' %}" alt="YouTube"></a>
+                        <a href="#"><img src="{% static 'images/twitter.png' %}" alt="Twitter"></a>
+                    </div>
+                </div>
+        
+                <!-- Company Section -->
+                <div class="company-section">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                        <li><a href="#">Pricing and Refund</a></li>
+                        <li><a href="#">Hire From Us</a></li>
+                        <li><a href="#">Bug Bounty</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Community Section -->
+                <div class="community-section">
+                    <h3>COMMUNITY</h3>
+                    <ul>
+                        <li><a href="#">Inertia</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Contact Section -->
+                <div class="contact-section">
+                    <h3>Get In Touch</h3>
+                    <p>+91 8090166752</p>
+                    <p>+91 9961978470</p>
+                    <p><a href="mailto:hello@sheryians.com">hello@sheryians.com</a></p>
+                    <p>23-B, Indrapuri Sector C,<br>Bhopal (MP), 462021</p>
+                </div>
+            </div>
+        </footer>
+        <hr>
+        <div id="footer-container" class="copyright">
+            <h1 id="copy">Copyright © 2023 Sheryians Pvt. Ltd.<br>All Rights Reserved.</h1>
+        </div>
+</body>
+</html>

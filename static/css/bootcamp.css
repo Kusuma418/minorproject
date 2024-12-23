@@ -1,0 +1,346 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    height: 1000px;
+}
+
+.container {
+    padding: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: transparent;
+    backdrop-filter: blur(200px);
+    position: fixed;
+}
+.anchors{
+    position: relative;
+    left: 100%;
+    /* background-color: transparent;
+    backdrop-filter: blur(1500px); */
+    
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+#logo_img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+.navbar nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sign-in {
+    background-color: #00c16e;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.info {
+    max-width: 45%;
+}
+
+.info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.details button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details .verified {
+    color: #00c16e;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.highlight {
+    color: #00c16e;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.seats-full {
+    background-color: #00c16e;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.video iframe {
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.belief-section {
+    /* text-align: center; */
+    margin: 100px 0;
+    width: 90%;
+    margin-left: 40px;
+}
+
+.belief-section span {
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.belief-section .highlight-green {
+    color: #00c16e;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 90px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover*/
+}
+
+
+
+
+
+.coding-schedule {
+    /* text-align: center; */
+    margin: 50px 0;
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.coding-schedule h1 {
+    font-size: 150px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.coding-schedule .highlight-green {
+    color: #00c16e; /* Green color to emphasize "5 Hours" */
+}
+.coding-schedule .everyday{
+    font-size: 45px;
+}
+
+.coding-schedule .subtext {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.coding-schedule .header {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+
+
+
+.dominate-schedule  {
+    margin: 50px 0;
+    width: 55%;
+    margin-left: 80px;
+    margin-top: 15%;
+}
+.dominate-schedule .dominate {
+    font-size: 200px;
+}
+.dominate-schedule .header{
+    margin-top: -20vh;
+    color: gray;
+    font-size: 80px;
+}
+
+select{
+    width: 88%;
+    height: 70px;
+    background-color: #121212;
+    color: white;
+    padding: 15px;
+    border: none;
+    margin-left: 5%;
+    font-size: 25px;
+}
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 5%;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Social Section */
+.social-section {
+    text-align: left;
+}
+
+.social-section .icon img {
+    width: 40px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Company and Community Sections */
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0cdb79;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0cdb79;
+}
+
+/* Contact Section */
+.contact-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: #0cdb79;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+#footer-container{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 0%;
+}
+hr{
+    margin-top: 4%;
+    position: relative;
+    top: 7.5%;
+    border-color: gray;
+    border-top: thistle;
+    width: 95%;
+    transform: translate(2.5%);
+}
+#copyhr{
+    margin-top: 4%;
+    position: relative;
+    top: -1%;
+    border-color: gray;
+    border-top: thistle;
+    width: 95%;
+    transform: translate(2.5%);
+
+}
+
+#copy{
+    margin-top: -1%;
+    font-size: 17px;
+}
+/* Copyright Section */
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #bbb;
+}

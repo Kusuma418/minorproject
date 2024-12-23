@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodr|Sheriyans</title>
+    <link rel="icon" href="{% static 'images/logo.webp' %}">
+    <link rel="stylesheet" href="{% static 'css/bootcamp.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo"><img id="logo_img" src="{% static 'images/logo.webp' %}" alt="">Sheryians coding school</div>
+            <nav class="anchors">
+                <a href="{% url 'mywebsite:home' %}">Home</a>
+                <a href="{% url 'mywebsite:courses' %}">Courses</a>
+                <a href="{% url 'mywebsite:bootcamp' %}">Bootcamp(Kodr)</a>
+                <a href="{% url 'mywebsite:requested' %}">Request Callback</a>
+                <a href="{% url 'mywebsite:signin' %}" class="sign-in">Sign In</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="info">
+                <h1>6 months In-House Bootcamp programme - Kodr.</h1>
+                <div class="details">
+                    <button>Starts On: 11 Nov 2024</button>
+                    <button>Placement Assistance <span class="verified">✔</span></button>
+                </div>
+                <p class="price">Price <span class="highlight">₹ 59000</span> [ 50,000 + 18% GST ]</p>
+                <button class="seats-full">Seats Are Full</button>
+            </div>
+            <div class="video">
+                <iframe width="696" height="391" src="https://www.youtube.com/embed/60SRAWmMXyc" title="This Bootcamp Will Change Your Life: Kodr x Sheryians !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+    </div>
+
+
+    <section class="belief-section">
+        <span>
+            we believe in,<br><span class="highlight-green">Consistency.</span>No shortcuts.
+        </span>
+        <div class="features">
+            <div class="feature">MERN Stack ⚡</div>
+            <div class="feature">Data Structures & Algorithm 👨‍💻</div>
+            <div class="feature">DBMS - SQL 🤟</div>
+            <div class="feature">CORE CS Subjects ⚙</div>
+            <div class="feature">Placement Assistance 💰</div>
+        </div>
+    </section>
+
+
+    <section class="coding-schedule">
+        <h1>
+            Non-Stop <span class="highlight-green">5 Hours</span> Coding<span class="everyday">[Everyday]</span>
+        </h1>
+        <!-- <p class="subtext">[Everyday]</p> -->
+        <div class="header">
+            Monday To Saturday. 11:00 AM To 4:00 PM.
+        </div>
+    </section>
+
+    <section class="dominate-schedule">
+        <h1 class="dominate">
+            Dominate.
+        </h1>
+        <!-- <p class="subtext">[Everyday]</p> -->
+        <div class="header">
+            From Start To Victory.
+        </div>
+    </section><br><br><br>
+    <section>
+            <hr>
+            <select>
+                <option>HTML/CSS</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>JavaScript</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>React JS</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>Data Structure Algorithm(DSA)</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>Node.js and Express JS(Backend)</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>DataBases</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>Git/GitHub</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>Devops and Deployment</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+            <hr>
+            <select>
+                <option>Additional Topics</option>
+                <option>CI/CD Pipelines</option>
+                <option>Docker</option>
+                <option>Containerization</option>
+                <option>Versioning</option>
+                <option>Load Balancing</option>
+            </select>
+    </section>
+    <hr><br>
+    <footer>
+            <div class="footer-container">
+                <!-- Social Section -->
+                <div class="social-section">
+                    <div class="icon">
+                        <img src="{% static 'images/logo.webp' %}" alt="Logo">
+                    </div>
+                    <h4>Let's connect with our socials</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="{% static 'images/insta.png' %}" alt="Instagram"></a>
+                        <a href="#"><img src="{% static 'images/linkedin.jpg' %}" alt="LinkedIn"></a>
+                        <a href="#"><img src="{% static 'images/youtube.png' %}" alt="YouTube"></a>
+                        <a href="#"><img src="{% static 'images/twitter.png' %}" alt="Twitter"></a>
+                    </div>
+                </div>
+        
+                <!-- Company Section -->
+                <div class="company-section">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                        <li><a href="#">Pricing and Refund</a></li>
+                        <li><a href="#">Hire From Us</a></li>
+                        <li><a href="#">Bug Bounty</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Community Section -->
+                <div class="community-section">
+                    <h3>COMMUNITY</h3>
+                    <ul>
+                        <li><a href="#">Inertia</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Contact Section -->
+                <div class="contact-section">
+                    <h3>Get In Touch</h3>
+                    <p>+91 8090166752</p>
+                    <p>+91 9961978470</p>
+                    <p><a href="mailto:hello@sheryians.com">hello@sheryians.com</a></p>
+                    <p>23-B, Indrapuri Sector C,<br>Bhopal (MP), 462021</p>
+                </div>
+            </div>
+        </footer>
+        <hr id="copyhr">
+        <div id="footer-container" class="copyright">
+            <h1 id="copy">Copyright © 2023 Sheryians Pvt. Ltd.<br>All Rights Reserved.</h1>
+        </div>
+</body>
+</html>
